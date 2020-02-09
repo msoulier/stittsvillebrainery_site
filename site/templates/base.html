@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Welcome to the Stittsville Brainery!</title>
+        <link rel="icon" href="/static/images/brainery_logo_large.png">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Shadows Into Light" rel="stylesheet">
+        <style>
+            * { box-sizing: border-box; }
+            p.logo { font-family: "Lobster", sans-serif;
+                     align: center;
+                     font-size: 3vw;
+                     margin: 0px;
+                     padding: 0px;
+                     padding-bottom: 15px; }
+            img.logo { vertical-align: text-bottom;
+                       width: 9vw;
+                       height: 8vw; }
+            p { font-family: "Catamaran", sans-serif;
+                font-size: 1.5vw;
+                color: black; }
+            ul.menu { list-style-type: none;
+                      margin: 0;
+                      padding: .5vw;
+                      width: 100%;
+                      background-color: black;
+                      overflow: auto; }
+            li.menu { display: inline;
+                      font-family: Catamaran;
+                      font-size: 1.5vw;
+                      padding: 2vw; }
+            a.menu { text-decoration: none;
+                     color: white;
+                     font-weight: bold; }
+            .column { float: left;
+                      padding: 20px; }
+            .left { width: 60%; }
+            .right { width: 40%; }
+            .row:after { content: ""; 
+                         display: table;
+                         clear: both; }
+            h1 { font-family: Lobster;
+                 font-weight: normal; }
+            h2 { font-family: Catamaran;
+                 font-weight: normal; }
+
+        </style>
+    </head>
+    <body>
+    {% block content %}
+    You should not see this
+    {% endblock %}
+    </body>
+</html>
