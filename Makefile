@@ -14,6 +14,10 @@ else
 	@true
 endif
 
+push: VERSION_CHECK
+	docker tag $(SITETAG) msoulier/stittsvillebrainery_site:$(VER)
+	docker push msoulier/stittsvillebrainery_site:$(VER)
+
 runsite: VERSION_CHECK
 	docker run -it --rm -p 80:80 -p 443:443 website:$(VER)
 
