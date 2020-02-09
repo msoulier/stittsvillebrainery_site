@@ -1,0 +1,20 @@
+FROM debian:buster
+MAINTAINER Michael Soulier <msoullier@digitaltorque.ca>
+
+RUN apt-get update
+RUN apt-get install -y python3-flask ssl-cert libssl1.1 uwsgi uwsgi-plugin-python3
+
+# regen the snakeoil cert - likely not required but what the hell
+RUN make-ssl-cert generate-default-snakeoil --force-overwrite
+
+
+RUN mkdir -p /var/www/html/static
+COPY site.run /root/run
+COPY site.ini /root/site.ini
+COPY boot.wsgi /var/www/html/boot.wsgi
+COPY site/routes.py /var/www/html/routes.py
+COPY site/images /var/www/html/static/images
+COPY site/bootstrap /var/www/html/static/bootstrap
+COPY site/templates /var/www/html/templates
+
+CMD ["/root/run"]

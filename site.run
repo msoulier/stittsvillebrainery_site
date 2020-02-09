@@ -1,0 +1,12 @@
+#!/bin/sh
+
+exec 2>&1
+
+export PYTHONPATH=/var/www/html
+
+# Provide default arguments
+if [ $# -eq 0 ]; then
+    set -- uwsgi /root/site.ini
+fi
+
+exec "$@"
