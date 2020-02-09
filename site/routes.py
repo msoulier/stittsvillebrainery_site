@@ -21,6 +21,22 @@ def index():
     log.info("in index, request.method is GET")
     return render_template('index.html')
 
+@app.route('/policies/')
+def policies(): 
+    return render_template('policies.html')
+
+@app.route('/about/')
+def about(): 
+    return render_template('about.html')
+
+@app.route('/contact/')
+def contact(): 
+    return render_template('contact.html')
+
+@app.route('/faq/')
+def faq(): 
+    return render_template('faq.html')
+
 def main():
     host = '0.0.0.0'
     port = 8080
