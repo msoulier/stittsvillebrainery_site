@@ -1,30 +1,107 @@
-<!doctype html>
 <html>
     <head>
-        <title>Coming soon!</title>
-        <link
-            type="text/css"
-            href="/static/bootstrap/css/bootstrap.css"
-            rel="stylesheet" />
-        <script
-            type="text/javascript"
-            src="/static/bootstrap/js/bootstrap.js"></script>
+        <title>Welcome to the Stittsville Brainery!</title>
+        <link rel="icon" href="/static/images/brainery_logo_large.png">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Shadows Into Light" rel="stylesheet">
+        <style>
+            * { box-sizing: border-box; }
+            p.logo { font-family: "Lobster", sans-serif;
+                     align: center;
+                     font-size: 3vw;
+                     margin: 0px;
+                     padding: 0px;
+                     padding-bottom: 15px; }
+            img.logo { vertical-align: text-bottom;
+                       width: 9vw;
+                       height: 8vw; }
+            p { font-family: "Catamaran", sans-serif;
+                font-size: 1.5vw;
+                color: black; }
+            ul.menu { list-style-type: none;
+                      margin: 0;
+                      padding: .5vw;
+                      width: 100%;
+                      background-color: black;
+                      overflow: auto; }
+            li.menu { display: inline;
+                      font-family: Catamaran;
+                      font-size: 1.5vw;
+                      padding: 2vw; }
+            a.menu { text-decoration: none;
+                     color: white;
+                     font-weight: bold; }
+            .column { float: left;
+                      padding: 20px; }
+            .left { width: 60%; }
+            .right { width: 40%; }
+            .row:after { content: ""; 
+                         display: table;
+                         clear: both; }
+            h1 { font-family: Lobster;
+                 font-weight: normal; }
+            h2 { font-family: Catamaran;
+                 font-weight: normal; }
+
+        </style>
     </head>
-    <body bgcolor="#ffffff" style="margins: 20px; padding: 20px;">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-3"></div>
-                <div class="col-xs-4">
-                    <img src="/static/images/noun_brain_web.png" />
-                </div>
-                <div class="col-xs-5"></div>
+    <body>
+        <div align="center">
+            <img src="/static/images/brain_with_heart.png" class="logo" alt="Brainery Logo Large">
+            <p class="logo">Stittsville Brainery</p>
+            <ul class="menu">
+                <li class="menu"><a class="menu" href="index.html">HOME</a></li>
+                <li class="menu"><a class="menu" href="learn.html">LEARN</a></li>
+                <li class="menu"><a class="menu" href="teach.html">TEACH</a></li>
+                <li class="menu"><a class="menu" href="give.html">VOLUNTEER</a></li>
+                <li class="menu"><a class="menu" href="faq.html">FAQ</a></li>
+                <li class="menu"><a class="menu" href="policies.html">POLICIES</a></li>
+                <li class="menu"><a class="menu" href="about.html">ABOUT</a></li>
+                <li class="menu"><a class="menu" href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="column left">
+                <h1>Upcoming Events</h1>
+                <h2>Introduction to Bullet Journaling</h2>
+                <p>Are you feeling disorganized or overwhelmed by your to-do
+                   list?  Do you find yourself missing important dates or
+                   appointments?  If so, this workshop is for you!  Join us
+                   for a fun and interactive class on Bullet Journaling.
+                   Bullet Journaling, also known as Bujo, is a personal
+                   organizational system, popularized on Pinterest and
+                   Instagram with its eye-catching and often artistic pages.
+                   Designed by designer Ryder Carroll, it aims to organize
+                   your to-do lists, schedules and reminders into a single
+                   resource, a simple notebook. Click <a
+                   href="events/bujo_101.html">here</a> to learn more and
+                   register.</p>
+                <h2>Introduction to Effective Public Speaking (Coming
+                    Soon!)</h2>
+                <p>Description coming soon!</h2>
+                <h2>Sewing 101 (Coming Soon!)</h2>
+                <p>Is your sewing machine still in the box? Does threading
+                   it look intimidating? This sewing basics workshop will
+                   teach you all the essentials you need to start your first
+                   project. Learn the different parts of
+                   your machine and why they are important, discover how to
+                   wind a bobbin and thread your sewing machine, master stitch
+                   control, learn about tension and the best stitches for
+                   different fabrics.</p>
             </div>
-            <div class="row">
-                <div class="col-xs-4"></div>
-                <div class="col-xs-5">
-                    <h1>Stittsville Brainery...coming soon!</h1>
-                </div>
-                <div class="col-xs-3"></div>
+            <div class="column right">
+                <!-- Bar graph -->
+                <h1>Brainery Impact Meter</h2>
+                <dl><dd class="percentage percentage=2%"><span class="text">Number
+of participants: 2</span></dd>
+                <dd class="percentage percentage=0"><span class="text">Number
+of workshops: 0</span></dd>
+                <dd class="percentage percentage=0"><span class="text">Hours
+of instruction: 0</span></dd>
+                <dd class="percentage percentage=0"><span class="text">Dollars
+raised for Charity: 0</span></dd></dl>
             </div>
+        </div>
     </body>
 </html>
