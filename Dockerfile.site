@@ -13,8 +13,7 @@ COPY site.run /root/run
 COPY site.ini /root/site.ini
 COPY boot.wsgi /var/www/html/boot.wsgi
 COPY site/routes.py /var/www/html/routes.py
-COPY site/images /var/www/html/static/images
-COPY site/bootstrap /var/www/html/static/bootstrap
+COPY site/static /var/www/html/static
 COPY site/templates /var/www/html/templates
 
 CMD ["/root/run"]

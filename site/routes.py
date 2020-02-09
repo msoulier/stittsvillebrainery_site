@@ -23,7 +23,7 @@ def index():
 
 def main():
     host = '0.0.0.0'
-    port = 80
+    port = 8080
 
     log.info("starting on %s:%d", host, port)
     app.run(debug=True, host=host, port=port)
