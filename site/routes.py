@@ -37,6 +37,12 @@ def contact():
 def faq(): 
     return render_template('faq.html')
 
+@app.route('/learn/')
+@app.route('/teach/')
+@app.route('/volunteer/')
+def comingsoon():
+    return render_template('coming_soon.html')
+
 def main():
     host = '0.0.0.0'
     port = 8080
