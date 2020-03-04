@@ -2,66 +2,42 @@
     <head>
         <title>Welcome to the Stittsville Brainery!</title>
         <link rel="icon" href="/static/images/brainery_with_heart.png">
-        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
-        <style>
-            * { box-sizing: border-box; }
-            p.logo { font-family: "Lobster", sans-serif;
-                     align: center;
-                     font-size: 3vw;
-                     margin: 0px;
-                     padding: 0px;
-                     padding-bottom: 15px; }
-            img.logo { vertical-align: text-bottom;
-                       width: 9vw;
-                       height: 8vw; }
-            p { font-family: "Catamaran", sans-serif;
-                font-size: 1.5vw;
-                color: black; }
-            ul.menu { list-style-type: none;
-                      margin: 0;
-                      padding: .5vw;
-                      width: 100%;
-                      background-color: black;
-                      overflow: auto; }
-            li.menu { display: inline;
-                      font-family: Catamaran;
-                      font-size: 1.5vw;
-                      padding: 2vw; }
-            a.menu { text-decoration: none;
-                     color: white;
-                     font-weight: bold; }
-            .column { float: left;
-                      padding: 20px; }
-            .left { width: 60%; }
-            .right { width: 40%; }
-            .row:after { content: ""; 
-                         display: table;
-                         clear: both; }
-            h1 { font-family: Lobster;
-                 font-weight: normal; }
-            h2 { font-family: Catamaran;
-                 font-weight: normal; }
-            li { font-family: Catamaran;}
-
-        </style>
+        <link
+            type="text/css"
+            href="/static/bootstrap/css/bootstrap.css"
+            rel="stylesheet" />
+        <link
+            type="text/css"
+            href="/static/screen.css"
+            rel="stylesheet" />
+        <script
+            type="text/javascript"
+            src="/static/jquery.js"></script>
+        <script
+            type="text/javascript"
+            src="/static/bootstrap/js/bootstrap.min.js"></script>
     </head>
     <body>
         <!-- Main menu -->
-        <div align="center">
-            <img src="/static/images/brain_with_heart.png" class="logo" alt="Brainery Logo Large">
-            <p class="logo">Stittsville Brainery</p>
-            <ul class="menu">
-                <li class="menu"><a class="menu" href="/">HOME</a></li>
-                <li class="menu"><a class="menu" href="/learn/">LEARN</a></li>
-                <li class="menu"><a class="menu" href="/teach/">TEACH</a></li>
-                <li class="menu"><a class="menu" href="/volunteer/">VOLUNTEER</a></li>
-                <li class="menu"><a class="menu" href="/faq/">FAQ</a></li>
-                <li class="menu"><a class="menu" href="/policies/">POLICIES</a></li>
-                <li class="menu"><a class="menu" href="/about/">ABOUT</a></li>
-                <li class="menu"><a class="menu" href="/contact/">CONTACT</a></li>
-            </ul>
-        </div>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <ul class="nav navbar-nav" role="navigation">
+                        <li><a class="menu" href="/">HOME</a></li>
+                        <li><a class="menu" href="/learn/">LEARN</a></li>
+                        <li><a class="menu" href="/teach/">TEACH</a></li>
+                        <li><a class="menu" href="/volunteer/">VOLUNTEER</a></li>
+                        <li><a class="menu" href="/faq/">FAQ</a></li>
+                        <li><a class="menu" href="/policies/">POLICIES</a></li>
+                        <li><a class="menu" href="/about/">ABOUT</a></li>
+                        <li><a class="menu" href="/contact/">CONTACT</a></li>
+                        <li><img id="logo"
+                                 src="/static/images/brain_with_heart.png"
+                                 alt="Brainery Logo Large" /></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
     {% block content %}
     You should not see this

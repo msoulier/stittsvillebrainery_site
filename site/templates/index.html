@@ -1,11 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-        <div class="row">
-            <div class="column left">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="container-fluid">
                 <h1>Upcoming Events</h1>
                 <h2>Introduction to Effective Public Speaking (Coming Soon!)</h2>
-                <p>Description coming soon!</h2>
+                <p>Description coming soon!</p>
                 <h2>Sewing 101 (Coming Soon!)</h2>
                 <p>
                     Is your sewing machine still in the box? Does threading it
@@ -18,7 +20,9 @@
                     fabrics.
                 </p>
             </div>
-            <div class="column right">
+        </div>
+        <div class="col-xs-6">
+            <div class="container-fluid">
                 <!-- Bar graph -->
                 <h1>Brainery Impact Meter</h2>
                 <dl>
@@ -37,4 +41,6 @@
                 </dl>
             </div>
         </div>
+    </div>
+</div>
 {% endblock %}

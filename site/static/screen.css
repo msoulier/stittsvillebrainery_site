@@ -1,0 +1,12 @@
+body {
+    font-size: +1.5em;
+}
+
+#logo {
+    height: 70px;
+    width: 70px;
+}
+
+dd {
+    padding-bottom: 10px;
+}
