@@ -9,9 +9,9 @@ RUN make-ssl-cert generate-default-snakeoil --force-overwrite
 
 
 RUN mkdir -p /var/www/html/static
-COPY site.run /root/run
-COPY site.ini /root/site.ini
-COPY boot.wsgi /var/www/html/boot.wsgi
+COPY site/site.run /root/run
+COPY site/site.ini /root/site.ini
+COPY site/boot.wsgi /var/www/html/boot.wsgi
 COPY site/routes.py /var/www/html/routes.py
 COPY site/static /var/www/html/static
 COPY site/templates /var/www/html/templates

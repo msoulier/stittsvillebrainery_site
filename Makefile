@@ -1,5 +1,6 @@
 VER=
 SITETAG=website:$(VER)
+CWD=$(shell pwd)
 
 all: site
 
@@ -19,7 +20,7 @@ push: VERSION_CHECK
 	docker push msoulier/stittsvillebrainery_site:$(VER)
 
 runsite: VERSION_CHECK
-	docker run -it --rm -p 80:80 -p 443:443 website:$(VER)
+	docker run -it --rm -p 80:80 -p 443:443 --volume=$(CWD)/site:/var/www/html website:$(VER)
 
 clean:
 	-docker rm -v `docker ps -aq -f status=exited`
